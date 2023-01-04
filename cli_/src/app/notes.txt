@@ -1,0 +1,45 @@
+
+//works
+// giphies = [];
+//   ngOnInit(): void {
+//     this.http.get<any>('https://api.giphy.com/v1/gifs/trending?api_key=xNnEEBVwRfjXsLluW1rpyMlpnRDSWVVn&limit=25&rating=g')
+//     .pipe(
+//       map(response => {
+//         // this.products = response.data;
+//         // this.products = response.data[1]
+//         this.giphies = (response.data)
+//       })
+//     ).subscribe(val => console.log(val))
+// 	}
+
+
+
+  <ul  class="list-group" style="margin-top:100px;">
+        <li class="list-group-item list-group-item-action" *ngFor="let product of products">
+            {{product.name}} hello
+        </li>
+    </ul>
+     
+ 
+
+
+ 
+// https://api.giphy.com/v1/gifs/trending?api_key=xNnEEBVwRfjXsLluW1rpyMlpnRDSWVVn&limit=25&rating=g
+// https://localhost:5001/api/products?pageSize=5
+
+
+
+
+  // form-component.component.ts
+  // next: (v) => console.log(v),
+  // error: (e) => console.error(e),
+  // complete: () => console.info('complete') 
+
+  // () => {
+  //   this.alertify.success('Registration succesful');
+  // },
+  // error => {
+  //   this.alertify.error(error);
+  // }
+
+

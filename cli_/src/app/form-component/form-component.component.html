@@ -1,0 +1,33 @@
+ <!-- <div class="container">
+        <form  #f="ngForm" [formGroup]="referer" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                        <label>
+                                <span>Name</span>
+                        </label>
+                        <input type="text" formControlName="FileName" class="form-control" placeholder="Referer Name">
+            
+                </div>
+             
+                <button  type="submit" class="btn btn-success" [disabled]="!referer.valid">Add</button>
+
+        </form>
+
+</div> -->
+
+<div class="container">
+        <mat-toolbar>
+                <span>Uploads</span>
+                <section class="toolbar-buttons"
+                         [style.margin-left.px]="12">
+                  <file-upload (selected)="fileChange($event)"
+                               accept="image/*"></file-upload>
+                 <!--  <button mat-button
+                          color="primary"
+                           (click)="uploadFiles()">Upload</button> -->
+                 
+                </section>
+              </mat-toolbar>
+
+</div>
+
+ 

@@ -1,0 +1,23 @@
+ 
+
+    <ul  class="list-group" style="margin-top:100px;">
+        <li class="list-group-item list-group-item-action" *ngFor="let product of products">
+            {{product.name}} hello
+        </li>
+    </ul>
+     
+ 
+
+ 
+ 
+  <!-- <div *ngFor="let g of giphies">
+     <img src="{{g}}">   
+    
+
+  </div> -->
+ 
+  <div class="container  "  > 
+<input type="file" (change)="handleInput($event)" [multiple]="true" accept={{fileformats}}>
+</div>
+
+<!-- <app-form-component></app-form-component> -->

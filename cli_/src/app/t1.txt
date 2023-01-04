@@ -1,0 +1,42 @@
+<div class="container"> 
+<div>door guard</div>
+<form  #login="ngForm"  (ngSubmit)="submit(login)">
+        <div class="form-group">
+                <label for="firstname"> name first </label>   <br>
+                <input type="text" name="firstname" class="form-control" ngModal>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+                <label for="lastname"> name last </label>  <br>
+                <input type="text" name="lastname" class="form-control" ngModal>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+                <label for="email"> internet mail  </label> <br>
+                <input type="text" name="email" class="form-control" ngModal>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+                <label for="password"> secret code pass</label> <br>
+                <input type="text" name="password" class="form-control" ngModal>
+        </div>
+        <button class="btn primary" type="submit>"> Submit</button>
+        <pre></pre>
+</form>
+
+ 
+</div>
+
+
+
+
+
+
+  submit(login){
+    console.log("Form submitted",  login)
+  }
+
+
+
+
+
